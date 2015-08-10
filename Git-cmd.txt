@@ -32,6 +32,11 @@ git commit -m "message"
 //update saved local commits to remote repo
 git push
 
+//to see what has been modified
+git status
+git diff
+
+
 ////--->Branches
 
 //Create a new branch
