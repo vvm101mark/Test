@@ -1,3 +1,8 @@
+//====================================
+//Resources:
+//http://gitref.org/basic/
+/https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository/
+//====================================
 //Init a local Git repo in this dir
 git init
 
