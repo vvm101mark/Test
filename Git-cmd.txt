@@ -1,0 +1,54 @@
+//====================================
+//Resources:
+//http://gitref.org/basic/
+/https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository/
+//====================================
+//Init a local Git repo in this dir
+git init
+
+//
+git config --global user.name "vvm101mark"
+git config --global user.email vm101mob@gmail.com
+
+
+//Point local repo at remote repo 
+git remote add origin https://github.com/vvm101mark/Test
+
+//Exporting a git repository via HTTP
+git clone http://yourserver.com/~you/proj.git
+
+//Now need to do this to let push command pass...
+//Otherwise error may happen:
+//"Updates were rejected because the tip of your current branch is behind its remote counterpart. 
+//Integrate the remote changes (e.g. 'git pull ...') before pushing again.
+//
+git pull https://github.com/vvm101mark/Test  master
+
+//adds all new files
+git add .
+//update tracking for files that changed names or were deleted
+git add -u
+//does both of the previous
+git add -A
+
+//Commit changes made above to local repo (updates only local repo, not remote)
+git commit -m "message"
+
+//update saved local commits to remote repo
+git push
+
+//to see what has been modified
+git status
+git diff
+
+
+////--->Branches
+
+//Create a new branch
+git checkout -b branchname
+
+//Shows current branch
+git branch
+
+//Switch to the branch 'master'
+git checkout master
